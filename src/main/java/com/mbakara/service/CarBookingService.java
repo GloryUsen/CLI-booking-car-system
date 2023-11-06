@@ -3,6 +3,8 @@ package com.mbakara.service;
 import com.mbakara.model.Car;
 import com.mbakara.model.User;
 
+import java.util.UUID;
+
 public class CarBookingService {
     private Car[] cars;
     private User[] users;
@@ -14,7 +16,7 @@ public class CarBookingService {
     }
 
     public void addCar(String carType) {
-        Car car = new Car(++carCount, carType);
+        Car car = new Car(UUID.randomUUID().toString(), carType);
         cars[carCount - 1] = car;
     }
 

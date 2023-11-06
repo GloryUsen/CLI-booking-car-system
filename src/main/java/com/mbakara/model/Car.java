@@ -2,13 +2,13 @@ package com.mbakara.model;
 
 public class Car {
 
-    private int id;
+    private String id;
     private String carType;
     private boolean isElectric;
     private boolean isBooked;
     private boolean available;
 
-    public Car(int id, String carType, boolean isElectric, boolean isBooked,boolean available) {
+    public Car(String id, String carType, boolean isElectric, boolean isBooked,boolean available) {
         this.id = id;
         this.carType = carType;
         this.isElectric = isElectric;
@@ -16,19 +16,19 @@ public class Car {
         this.available = available;
     }
 
-    public Car(int id, String carType) {
+    public Car(String id, String carType) {
         this.id = id;
         this.carType = carType;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
     public boolean getAvailable() {
         return available;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
